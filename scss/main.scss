@@ -5,18 +5,20 @@
 
 $primary: #5265E1;
 $secondary: #FA5959;
-$theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
-);
+
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";
-
+@import "custom";
+// @import "../node_modules/bootstrap/scss/navbarcustom";
 
 // Then add additional custom code here
+// .letter {
+//   letter-spacing: 0.1rem;
+//   text-transform: uppercase;
+//   font-weight: 500;
+// }
+
+// .logo-bookmark {
+//   padding: 0.6rem 2rem;
+// }
