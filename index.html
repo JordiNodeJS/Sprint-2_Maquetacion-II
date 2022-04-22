@@ -13,17 +13,18 @@
 </head>
 
 <body>
-  <div class="container  fixed-top">
+
+  <div class="container sticky-top">
     <nav class="navbar navbar-expand-lg navbar-light bg-white text-uppercase fw-bold letter">
       <div class="container-fluid">
-        <!-- logo bookmark -->
-        <a class="navbar-brand" href="#"><img src="assets/ex1/logo-bookmark.svg" alt="bookmark logo" /></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
-          aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+
+        <a class="navbar-brand" href="#"><img src="assets/img/logo-bookmark.svg" alt="bookmark logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarburger"
+          aria-controls="navbarburger" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="navbarburger">
           <ul class="navbar-nav ms-auto">
 
             <li class="nav-item me-5">
@@ -48,8 +49,25 @@
     </nav>
   </div>
 
+  <div class="container mt-5">
 
-<!-- <div style="height: 1700px; background-color: wheat"></div> -->
+    <div class="row">
+      <div class="order-1 order-sm-0 col-12 col-md-6 col-lg-6">
+        <h1 class="text-center text-md-start fw-bolder">A Simple Bookmark Manager</h1>
+        <p class="text-muted">A clean and simple interface to organize your favourite websites. Open a new broser tab and see your sites
+          load instantly. Try it for free.</p>
+
+          <a class="btn btn-primary btn-sm text-white rounded-3  fw-bolder me-2 my-2 py-3 px-4" href="#">Get it on Chrome</a>
+          <a class="btn btn-light-2 btn-sm text-muted rounded-3 shadow fw-bolder  py-3 px-4" href="#">Get it on Firefox</a>
+
+      </div>
+      <div class="position-relative  order-0 order-sm-1 col border border-alerta overflow-query">
+        <img class="img-fluid"  src="assets/img/illustration-hero.svg" alt="image" />
+        <div class=" position-absolute top-50 start-50 bg-primary bg-figure"></div>
+      </div>
+    </div>
+  </div>
+  <!-- <div style="height: 1700px; background-color: wheat"></div> -->
 </body>
 
 </html>
