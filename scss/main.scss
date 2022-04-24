@@ -21,7 +21,7 @@ $custom-theme: (
     "primary":  $primary,
     "secondary":  $secondary,
     "light-2": $gray-200,
-    "alerta": $warning
+    "design": $warning
 );
 
 $theme-colors: map-merge($theme-colors, $custom-theme);
