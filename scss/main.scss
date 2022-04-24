@@ -7,6 +7,7 @@ $primary: #5265E1;
 $secondary: #FA5959;
 $enable-shadows:              true;
 $enable-gradients:            true;
+
 // 2 Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../node_modules/bootstrap/scss/functions";
 // 2.1 Include default variable overrides here with variables from _varialbles.scss
