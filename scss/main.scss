@@ -1,6 +1,8 @@
 // Custom.scss
 
 // 1. Include any default variable overrides here
+
+$font-family-base:   'Roboto', sans-serif;
 $enable-negative-margins:     true;
 
 $primary: #5265E1;
@@ -8,11 +10,15 @@ $secondary: #FA5959;
 $enable-shadows:              true;
 $enable-gradients:            true;
 
+
+
+
 // 2 Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../node_modules/bootstrap/scss/functions";
 // 2.1 Include default variable overrides here with variables from _varialbles.scss
 @import "../node_modules/bootstrap/scss/variables";
 
+//  THEME COLORS
 $box-shadow: 0 .5rem 1rem rgba($blue-700, .20);
 $box-shadow-lg: 0 1rem 3rem rgba($blue-400, 0.18);
 $warning: $yellow-500;
@@ -25,6 +31,38 @@ $custom-theme: (
 );
 
 $theme-colors: map-merge($theme-colors, $custom-theme);
+
+
+
+
+
+// TAB COLORS
+$link-hover-color: $orange-400;
+
+
+$nav-link-padding-y:                .5rem;
+$nav-link-padding-x:                1rem;
+$nav-link-font-size:                null;
+$nav-link-font-weight:              bold;
+$nav-link-color:                    $gray-600;
+$nav-link-hover-color:              $link-hover-color;
+$nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+$nav-link-disabled-color:           $gray-600;
+
+$nav-tabs-border-color:             $gray-300; // changed to $orange
+$nav-tabs-border-width:             $border-width;
+$nav-tabs-border-radius:            $border-radius;
+$nav-tabs-link-hover-border-color:  $gray-200 $nav-tabs-border-color;
+$nav-tabs-link-active-color:        $orange; // changed to $orange
+$nav-tabs-link-active-bg:           $body-bg;
+$nav-tabs-link-active-border-color: $orange $nav-tabs-link-active-bg;
+
+
+$nav-pills-border-radius:           $border-radius;
+$nav-pills-link-active-color:       $component-active-color;
+$nav-pills-link-active-bg:          $component-active-bg;
+
+
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/bootstrap";

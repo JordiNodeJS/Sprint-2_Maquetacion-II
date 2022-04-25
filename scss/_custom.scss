@@ -1,4 +1,3 @@
-
 .letter {
   letter-spacing: 0.1rem;
   text-transform: uppercase;
@@ -9,15 +8,45 @@
   padding: 0.6rem 2rem;
 }
 
-// custom elements start
-.alpha {
-  color: $purple;
+// BUTTONS
+
+/*This is modifying the btn-primary colors but you could create your own .btn-something class as well*/
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  color: $primary !important;
+  border-color: $primary;
+  background-color: $body-bg;
 }
-.beta {
-  color: $yellow-300;
-  background-color: $indigo-900;
+.btn-light-2:hover, .btn-light-2:focus, .btn-light-2:active, .btn-light-2.active, .open>.dropdown-toggle.btn-light-2 {
+
+  border-color: $gray-700;
+  background-color: $body-bg;
 }
-// custom elements end
+
+
+
+
+
+// custom elements tab start
+
+.active {
+  border: none !important;
+  border-bottom: solid $orange !important;
+  padding: auto;
+  margin: 0;
+}
+.tab-content {
+  .active{
+    border: none !important;
+  }
+}
+.nav-link {
+  padding: 1.5rem 3rem;
+  &:hover {
+    border: transparent !important;
+  }
+}
+// custom elements tab end
 .overflow-query {
   overflow: hidden;
 }

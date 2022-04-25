@@ -52,7 +52,7 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-family: Roboto, sans-serif;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -195,7 +195,7 @@ a {
   color: #5265E1;
   text-decoration: underline; }
   a:hover {
-    color: #4251b4; }
+    color: #fd9843; }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
@@ -3114,14 +3114,15 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #5265E1;
+  font-weight: bold;
+  color: #6c757d;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
     .nav-link {
       transition: none; } }
   .nav-link:hover, .nav-link:focus {
-    color: #4251b4; }
+    color: #fd9843; }
   .nav-link.disabled {
     color: #6c757d;
     pointer-events: none;
@@ -3136,7 +3137,7 @@ textarea.form-control-lg {
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem; }
     .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-      border-color: #e9ecef #e9ecef #dee2e6;
+      border-color: #e9ecef #dee2e6;
       isolation: isolate; }
     .nav-tabs .nav-link.disabled {
       color: #6c757d;
@@ -3144,9 +3145,9 @@ textarea.form-control-lg {
       border-color: transparent; }
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
-    color: #495057;
+    color: #fd7e14;
     background-color: #fff;
-    border-color: #dee2e6 #dee2e6 #fff; }
+    border-color: #fd7e14 #fff; }
   .nav-tabs .dropdown-menu {
     margin-top: -1px;
     border-top-left-radius: 0;
@@ -4614,7 +4615,7 @@ textarea.form-control-lg {
   z-index: 1080;
   display: block;
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -4699,7 +4700,7 @@ textarea.form-control-lg {
   z-index: 1070;
   display: block;
   max-width: 276px;
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -8597,12 +8598,29 @@ textarea.form-control-lg {
 .logo-bookmark {
   padding: 0.6rem 2rem; }
 
-.alpha {
-  color: #6f42c1; }
+/*This is modifying the btn-primary colors but you could create your own .btn-something class as well*/
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+  color: #5265E1 !important;
+  border-color: #5265E1;
+  background-color: #fff; }
 
-.beta {
-  color: #ffda6a;
-  background-color: #140330; }
+.btn-light-2:hover, .btn-light-2:focus, .btn-light-2:active, .btn-light-2.active, .open > .dropdown-toggle.btn-light-2 {
+  border-color: #495057;
+  background-color: #fff; }
+
+.active {
+  border: none !important;
+  border-bottom: solid #fd7e14 !important;
+  padding: auto;
+  margin: 0; }
+
+.tab-content .active {
+  border: none !important; }
+
+.nav-link {
+  padding: 1.5rem 3rem; }
+  .nav-link:hover {
+    border: transparent !important; }
 
 .overflow-query {
   overflow: hidden; }
