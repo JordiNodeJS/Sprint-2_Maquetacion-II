@@ -131,6 +131,7 @@
 
 // MEDIA QUERIES
 // mobile S, M
+$padding-value: 6rem;
 @media (min-width: 375px) {
   .bg-figure {
     transform: translate(-25%, -30%) !important;
@@ -140,6 +141,10 @@
   }
   .marginleft {
     margin-left: 4rem;
+  }
+  .margin-faq{
+    padding: 0 $padding-value 0 $padding-value;
+
   }
 }
 @media (max-width: 320px) {

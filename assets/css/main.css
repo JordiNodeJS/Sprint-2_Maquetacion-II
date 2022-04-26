@@ -8694,7 +8694,9 @@ textarea.form-control-lg {
     width: 90% !important;
     height: 10.5rem !important; }
   .marginleft {
-    margin-left: 4rem; } }
+    margin-left: 4rem; }
+  .margin-faq {
+    padding: 0 6rem 0 6rem; } }
 
 @media (max-width: 320px) {
   .bg-figure-componet-tab {
