@@ -115,7 +115,7 @@
 }
 
 .card-text {
-  border-bottom: 5px dotted  $gray-200;
+  border-bottom: 5px dotted $gray-200;
   padding-bottom: 2rem;
 }
 .text-silver {
@@ -131,21 +131,28 @@
     color: $gray-600;
     line-height: 2.9rem;
   }
+}
+.accordion-button {
+  &:hover {
+    color: $red-400;
+  }
 
+  &:hover:not(.collapsed) {
+    color: $body-color;
+  }
 }
 
-	/* Custom style */
-  .accordion-button::after {
-    background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='darkblue'><path d='M0 0h24v24H0z' fill='none'/><path d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'/></svg>");
-    transform: scale(1.7) !important;
-  }
-  .accordion-button:not(.collapsed)::after {
-    background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='red'><path d='M0 0h24v24H0z' fill='none'/><path d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'/></svg>");
-    transform: scale(1.7) rotate(-180deg) !important;
-  }
+/* Custom style */
+.accordion-button::after {
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='darkblue'><path d='M0 0h24v24H0z' fill='none'/><path d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'/></svg>");
+  transform: scale(1.7) !important;
+  fill: yellow !important;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='red'><path d='M0 0h24v24H0z' fill='none'/><path d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'/></svg>");
+  transform: scale(1.7) rotate(-180deg) !important;
+}
 // FAQs END
-
-
 
 // MEDIA QUERIES
 // mobile S, M
@@ -160,9 +167,8 @@ $padding-value: 6rem;
   .marginleft {
     margin-left: 4rem;
   }
-  .margin-faq{
+  .margin-faq {
     padding: 0 $padding-value 0 $padding-value;
-
   }
 }
 @media (max-width: 320px) {
@@ -173,7 +179,6 @@ $padding-value: 6rem;
 @media (max-width: 1024px) {
   .bg-figure-componet-tab {
     height: 13.5rem;
-
   }
 }
 // tablet
