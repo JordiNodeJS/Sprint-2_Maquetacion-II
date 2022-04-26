@@ -63,12 +63,15 @@ $nav-pills-link-active-bg:          $component-active-bg;
 
 
 // scss-docs-start accordion-variables
+$component-active-color:      $red;
+$component-active-bg:         $white;
+
 $accordion-padding-y:                     1rem;
 $accordion-padding-x:                     1.25rem;
 $accordion-color:                         $body-color;
 $accordion-bg:                            $body-bg;
 $accordion-border-width:                  $border-width;
-$accordion-border-color:                  rgba($purple, .125);
+$accordion-border-color:                  rgba($gray-500, .425);
 $accordion-border-radius:                 $border-radius;
 $accordion-inner-border-radius:           subtract($accordion-border-radius, $accordion-border-width);
 
@@ -80,8 +83,8 @@ $accordion-button-padding-x:              $accordion-padding-x;
 $accordion-button-color:                  $accordion-color;
 $accordion-button-bg:                     $accordion-bg;
 $accordion-transition:                    $btn-transition, border-radius .15s ease;
-$accordion-button-active-bg:              tint-color($component-active-bg, 90%);
-$accordion-button-active-color:           shade-color($primary, 10%);
+$accordion-button-active-bg:              tint-color($component-active-bg, 50%);
+$accordion-button-active-color:           shade-color($body-color, 10%);
 
 $accordion-button-focus-border-color:     $input-focus-border-color;
 $accordion-button-focus-box-shadow:       $btn-focus-box-shadow;

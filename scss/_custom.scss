@@ -124,7 +124,25 @@
 // card componet END
 
 // FAQs START
+.accordion-item {
+  border: none;
+  background-color: $body-bg;
+  .accordion-body {
+    color: $gray-600;
+    line-height: 2.9rem;
+  }
 
+}
+
+	/* Custom style */
+  .accordion-button::after {
+    background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='darkblue'><path d='M0 0h24v24H0z' fill='none'/><path d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'/></svg>");
+    transform: scale(1.7) !important;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='red'><path d='M0 0h24v24H0z' fill='none'/><path d='M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z'/></svg>");
+    transform: scale(1.7) rotate(-180deg) !important;
+  }
 // FAQs END
 
 
