@@ -8659,7 +8659,12 @@ textarea.form-control-lg {
   border-end-end-radius: 8rem; }
 
 .card-group {
+  position: relative;
   gap: 3%; }
+  .card-group div.card:nth-child(2) {
+    top: 3rem; }
+  .card-group div.card:last-child {
+    top: 6rem; }
 
 .card {
   display: flex;

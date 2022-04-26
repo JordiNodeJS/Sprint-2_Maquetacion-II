@@ -89,7 +89,14 @@
 // figurita del fondo azul END
 // card componet START
 .card-group {
+  position: relative;
   gap: 3%;
+  div.card:nth-child(2) {
+    top: 3rem;
+  }
+  div.card:last-child {
+    top: 6rem;
+  }
 }
 .card {
   display: flex;
