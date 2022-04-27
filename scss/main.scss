@@ -8,7 +8,7 @@ $enable-negative-margins:     true;
 $primary: #5265E1;
 $secondary: #FA5959;
 $enable-shadows:              true;
-$enable-gradients:            true;
+$enable-gradients:            false;
 
 
 
@@ -83,7 +83,7 @@ $accordion-button-padding-x:              $accordion-padding-x;
 $accordion-button-color:                  $accordion-color;
 $accordion-button-bg:                     $accordion-bg;
 $accordion-transition:                    $btn-transition, border-radius .15s ease;
-$accordion-button-active-bg:              tint-color($component-active-bg, 50%);
+$accordion-button-active-bg:              tint-color($component-active-bg, 100%);
 $accordion-button-active-color:           shade-color($gray-600, 40%);
 
 $accordion-button-focus-border-color:     $input-focus-border-color;
@@ -99,8 +99,9 @@ $accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w
 $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
 // scss-docs-end accordion-variables
 
-
-
+// 2.2 Override utilities
+@import "../node_modules/bootstrap/scss/utilities";
+// here you override what you fancy.
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/bootstrap";

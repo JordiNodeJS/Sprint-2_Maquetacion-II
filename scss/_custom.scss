@@ -29,30 +29,60 @@
   border-color: $gray-700;
   background-color: $body-bg;
 }
+.btn-contactus {
+  background-color: $secondary;
+  color: $white;
+}
+.btn-contactus:hover,
+.btn-contactus:focus,
+.btn-contactus:active,
+.btn-contactus.active {
+  border-color: $red-500;
+  background-color: $red-500;
+}
 
 // SPACER
 .spacer {
   height: 10rem;
 }
-// custom elements tab start
 
-.active {
-  border: none !important;
-  border-bottom: solid $orange !important;
-  padding: auto;
-  margin: 0;
+//nav menu
+#navbarpremium{
+  .nav-link {
+    &:hover{
+      color: $red-400;
+    }
+  }
+  .btn-secondary {
+    &:hover {
+      background-color: $white !important;
+      color: $red-400 !important;
+
+    }
+  }
 }
-.tab-content {
+
+// custom elements tab start
+#component-tabs{
   .active {
     border: none !important;
+    border-bottom: solid $orange !important;
+    padding: auto;
+    margin: 0;
+  }
+  .tab-content {
+    .active {
+      border: none !important;
+    }
+  }
+  .nav-link {
+    padding: 1.5rem 3rem;
+    &:hover {
+      border: transparent !important;
+    }
   }
 }
-.nav-link {
-  padding: 1.5rem 3rem;
-  &:hover {
-    border: transparent !important;
-  }
-}
+
 // custom elements tab end
 
 // figurita del fondo azul START
@@ -154,8 +184,29 @@
 }
 // FAQs END
 
-// MEDIA QUERIES
-// mobile S, M
+// FOOTER
+.letter-spacing {
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+@media (max-width: 320px) {
+  .letter-spacing {
+    font-size: 0.4rem;
+    letter-spacing: 0.4rem;
+  }
+}
+.bg-nav-footer {
+  background-color: #242946;
+}
+#footer a {
+  font-weight: 100;
+  color: white;
+}
+
+
+//{ MEDIA QUERIES
+// mobile S, M}
 $padding-value: 6rem;
 @media (min-width: 375px) {
   .bg-figure {
