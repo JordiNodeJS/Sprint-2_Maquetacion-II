@@ -280,7 +280,7 @@
 
   <div class="my-5"></div>
   <!-- FOOTER -->
-  <footer class="container-fluid bg-primary mt-5 pt-5">
+  <footer class="mt-5 pt-5 bg-primary">
     <!-- FORM -->
     <div class="row">
       <div class="col-12">
@@ -303,15 +303,18 @@
       </div>
     </div>
     <div class="my-5"></div>
-    <!-- NAV FOOTER -->
-    <div class="container-fluid row bg-nav-footer" role="navegation" id="footer">
-      <nav class="navbar navbar-expand-lg navbar-lighttext-uppercase letter">
-        <div class="container-fluid d-flex justify-content-around">
 
-          <div class="d-flex justify-content-start">
+
+    <!-- NAV FOOTER -->
+    <section class="bg-nav-footer">
+       <div class="container-fluid row " role="navegation" id="footer">
+      <nav class="navbar navbar-expand-lg navbar-lighttext-uppercase letter">
+        <div class="container-fluid d-flex flex-column align-items-center flex-md-row justify-content-md-around">
+
+          <div class="d-flex flex-column flex-md-row">
             <a class="navbar-brand" href="#"><img  class="me-2" src="assets/img/logo-bookmark-footer.svg"
                 alt="bookmark logo" />BOOKMARK</a>
-            <ul class="nav">
+            <ul class="nav flex-column align-items-center flex-md-row mb-2">
               <li class="nav-item">
                 <a class="nav-link" href="#">Features</a>
                 <span class="visually-hidden">(current)</span>
@@ -324,7 +327,7 @@
               </li>
             </ul>
           </div>
-          <div class="social-media">
+          <div class="social-media mb-3">
             <img class="me-4" src="assets/img/facebook.svg" alt="">
             <img src="assets/img/twitter.svg" alt="">
           </div>
@@ -332,6 +335,8 @@
         </div>
       </nav>
     </div>
+    </section>
+
   </footer>
 
 
