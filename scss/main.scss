@@ -2,109 +2,129 @@
 
 // 1. Include any default variable overrides here
 
-$font-family-base:   'Roboto', sans-serif;
-$enable-negative-margins:     true;
+$font-family-base: 'Roboto', sans-serif;
+$enable-negative-margins: true;
 
-$primary: #5265E1;
-$secondary: #FA5959;
-$enable-shadows:              true;
-$enable-gradients:            false;
-
-
-
+$primary: #5265e1;
+$secondary: #fa5959;
+$enable-shadows: true;
+$enable-gradients: false;
 
 // 2 Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import "../node_modules/bootstrap/scss/functions";
+@import '../node_modules/bootstrap/scss/functions';
 // 2.1 Include default variable overrides here with variables from _varialbles.scss
-@import "../node_modules/bootstrap/scss/variables";
+@import '../node_modules/bootstrap/scss/variables';
 
 //  THEME COLORS
-$box-shadow: 0 .5rem 1rem rgba($blue-700, .20);
+$box-shadow: 0 0.5rem 1rem rgba($blue-700, 0.2);
 $box-shadow-lg: 0 1rem 3rem rgba($blue-400, 0.18);
 $warning: $yellow-500;
 
 $custom-theme: (
-    "primary":  $primary,
-    "secondary":  $secondary,
-    "light-2": $gray-200,
-    "design": $warning
+  'primary': $primary,
+  'secondary': $secondary,
+  'light-2': $gray-200,
+  'alert': $red-500,
+  'design': $warning,
 );
 
 $theme-colors: map-merge($theme-colors, $custom-theme);
 
-
-
-
 // TAB COLORS
 $link-hover-color: $orange-400;
 
+$nav-link-padding-y: 0.5rem;
+$nav-link-padding-x: 1rem;
+$nav-link-font-size: null;
+$nav-link-font-weight: bold;
+$nav-link-color: $gray-600;
+$nav-link-hover-color: $link-hover-color;
+$nav-link-transition: color 0.15s ease-in-out,
+  background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+$nav-link-disabled-color: $gray-600;
 
-$nav-link-padding-y:                .5rem;
-$nav-link-padding-x:                1rem;
-$nav-link-font-size:                null;
-$nav-link-font-weight:              bold;
-$nav-link-color:                    $gray-600;
-$nav-link-hover-color:              $link-hover-color;
-$nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-$nav-link-disabled-color:           $gray-600;
-
-$nav-tabs-border-color:             $gray-300; // changed to $orange
-$nav-tabs-border-width:             $border-width;
-$nav-tabs-border-radius:            $border-radius;
-$nav-tabs-link-hover-border-color:  $gray-200 $nav-tabs-border-color;
-$nav-tabs-link-active-color:        $gray-700; // changed to $orange.
-$nav-tabs-link-active-bg:           $body-bg;
+$nav-tabs-border-color: $gray-300; // changed to $orange
+$nav-tabs-border-width: $border-width;
+$nav-tabs-border-radius: $border-radius;
+$nav-tabs-link-hover-border-color: $gray-200 $nav-tabs-border-color;
+$nav-tabs-link-active-color: $gray-700; // changed to $orange.
+$nav-tabs-link-active-bg: $body-bg;
 $nav-tabs-link-active-border-color: $orange $nav-tabs-link-active-bg;
 
-
-$nav-pills-border-radius:           $border-radius;
-$nav-pills-link-active-color:       $component-active-color;
-$nav-pills-link-active-bg:          $component-active-bg;
-
+$nav-pills-border-radius: $border-radius;
+$nav-pills-link-active-color: $component-active-color;
+$nav-pills-link-active-bg: $component-active-bg;
 
 // scss-docs-start accordion-variables
-$component-active-color:      $red;
-$component-active-bg:         $white;
+$component-active-color: $red;
+$component-active-bg: $white;
 
-$accordion-padding-y:                     1rem;
-$accordion-padding-x:                     1.25rem;
-$accordion-color:                         $body-color;
-$accordion-bg:                            $body-bg;
-$accordion-border-width:                  $border-width;
-$accordion-border-color:                  rgba($gray-500, .425);
-$accordion-border-radius:                 $border-radius;
-$accordion-inner-border-radius:           subtract($accordion-border-radius, $accordion-border-width);
+$accordion-padding-y: 1rem;
+$accordion-padding-x: 1.25rem;
+$accordion-color: $body-color;
+$accordion-bg: $body-bg;
+$accordion-border-width: $border-width;
+$accordion-border-color: rgba($gray-500, 0.425);
+$accordion-border-radius: $border-radius;
+$accordion-inner-border-radius: subtract(
+  $accordion-border-radius,
+  $accordion-border-width
+);
 
-$accordion-body-padding-y:                $accordion-padding-y;
-$accordion-body-padding-x:                $accordion-padding-x;
+$accordion-body-padding-y: $accordion-padding-y;
+$accordion-body-padding-x: $accordion-padding-x;
 
-$accordion-button-padding-y:              $accordion-padding-y;
-$accordion-button-padding-x:              $accordion-padding-x;
-$accordion-button-color:                  $accordion-color;
-$accordion-button-bg:                     $accordion-bg;
-$accordion-transition:                    $btn-transition, border-radius .15s ease;
-$accordion-button-active-bg:              tint-color($component-active-bg, 100%);
-$accordion-button-active-color:           shade-color($gray-600, 40%);
+$accordion-button-padding-y: $accordion-padding-y;
+$accordion-button-padding-x: $accordion-padding-x;
+$accordion-button-color: $accordion-color;
+$accordion-button-bg: $accordion-bg;
+$accordion-transition: $btn-transition, border-radius 0.15s ease;
+$accordion-button-active-bg: tint-color($component-active-bg, 100%);
+$accordion-button-active-color: shade-color($gray-600, 40%);
 
-$accordion-button-focus-border-color:     $input-focus-border-color;
-$accordion-button-focus-box-shadow:       $btn-focus-box-shadow;
+$accordion-button-focus-border-color: $input-focus-border-color;
+$accordion-button-focus-box-shadow: $btn-focus-box-shadow;
 
-$accordion-icon-width:                    1.25rem;
-$accordion-icon-color:                    $accordion-button-color;
-$accordion-icon-active-color:             $accordion-button-active-color;
-$accordion-icon-transition:               transform .2s ease-in-out;
-$accordion-icon-transform:                rotate(-180deg);
+$accordion-icon-width: 1.25rem;
+$accordion-icon-color: $accordion-button-color;
+$accordion-icon-active-color: $accordion-button-active-color;
+$accordion-icon-transition: transform 0.2s ease-in-out;
+$accordion-icon-transform: rotate(-180deg);
 
-$accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
-$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
 // scss-docs-end accordion-variables
 
+// scss-docs-start alert-variables
+$alert-padding-y: $spacer;
+$alert-padding-x: $spacer;
+$alert-margin-bottom: 1rem;
+$alert-border-radius: $border-radius;
+$alert-link-font-weight: $font-weight-bold;
+$alert-border-width: $border-width;
+$alert-bg-scale: 3%;
+$alert-border-scale: -70%;
+$alert-color-scale: 40%;
+$alert-dismissible-padding-r: $alert-padding-x * 3; // 3x covers width of x plus default padding on either side
+// scss-docs-end alert-variables
+
+// FORM VALIDATION STYLES
+$form-feedback-margin-top: $form-text-margin-top;
+$form-feedback-font-size: $form-text-font-size;
+$form-feedback-font-style: $form-text-font-style;
+$form-feedback-valid-color: $success;
+$form-feedback-invalid-color: $danger;
+
+$form-feedback-icon-valid-color: $form-feedback-valid-color;
+$form-feedback-icon-valid: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path fill='#{$form-feedback-icon-valid-color}' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/></svg>");
+$form-feedback-icon-invalid-color: $form-feedback-invalid-color;
+$form-feedback-icon-invalid:        url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='#{$form-feedback-icon-invalid-color}' stroke='#fff'><circle cx='6' cy='6' r='4.5'/><path stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/><circle cx='6' cy='8.2' r='.6' fill='#fff' stroke='#{$form-feedback-icon-invalid-color}'/></svg>");
 // 2.2 Override utilities
-@import "../node_modules/bootstrap/scss/utilities";
+@import '../node_modules/bootstrap/scss/utilities';
 // here you override what you fancy.
 
 // 3. Include remainder of required Bootstrap stylesheets
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import '../node_modules/bootstrap/scss/bootstrap';
 
 // 4. Include any optional Bootstrap components as you like
-@import "custom";
+@import 'custom';

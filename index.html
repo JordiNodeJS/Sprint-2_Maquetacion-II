@@ -13,11 +13,13 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <script defer src="assets/js/bootstrap.min.js"></script>
 
+
+
 </head>
 
 <body>
   <!-- navbar -->
-  <header class="container sticky-top" id="navbarpremium">
+  <header class="container sticky-top navbarpremium">
     <nav class="navbar navbar-expand-lg navbar-light bg-white text-uppercase fw-bold letter">
       <div class="container-fluid">
 
@@ -280,7 +282,7 @@
 
   <div class="my-5"></div>
   <!-- FOOTER -->
-  <footer class="mt-5 pt-5 bg-primary">
+  <footer class="mt-5 pt-5 bg-primary navbarpremium">
     <!-- FORM -->
     <div class="row">
       <div class="col-12">
@@ -288,53 +290,72 @@
         <h2 class="text-white text-center mb-5">Stay up-to-date with what we're doing</h2>
       </div>
       <div class="col-12 d-flex justify-content-center">
-        <form class="row row-cols-lg-auto row-cols-sm-12 g-3 align-items-center">
+
+
+
+        <!-- FORM VALIDATION -->
+        <form action="#" class="row row-cols-lg-auto row-cols-sm-12 g-3 align-items-center was-validated">
+        <!-- <form action="#" class="was-validated"> -->
           <div class="col-12">
-            <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+            <label class="visually-hidden" for="emailValidation">Username</label>
             <div class="input-group">
-              <input type="email" class="form-control px-4 py-2" id="inlineFormInputGroupUsername"
-                placeholder="format: your@email.com">
+              <input type="email" class="form-control  px-4 py-2" id="emailValidation">
+
+              <div class="invalid-tooltip">
+                Please choose a username
+              </div>
             </div>
+
           </div>
           <div class="col-12 d-grid gap-sm-2 mx-sm-auto">
-            <button type="submit" class="btn btn-contactus px-4 py-2">Contact Us</button>
+            <button type="submit" class="btn btn-secondary text-white px-4 py-2">Contact Us</button>
           </div>
         </form>
       </div>
     </div>
+
+
+
+
+
+
+
+
+
+
     <div class="my-5"></div>
 
 
     <!-- NAV FOOTER -->
     <section class="bg-nav-footer">
-       <div class="container-fluid row " role="navegation" id="footer">
-      <nav class="navbar navbar-expand-lg navbar-lighttext-uppercase letter">
-        <div class="container-fluid d-flex flex-column align-items-center flex-md-row justify-content-md-around">
+      <div class="container-fluid row " role="navegation" id="footer">
+        <nav class="navbar navbar-expand-lg navbar-lighttext-uppercase letter">
+          <div class="container-fluid d-flex flex-column align-items-center flex-md-row justify-content-md-around">
 
-          <div class="d-flex flex-column flex-md-row">
-            <a class="navbar-brand" href="#"><img  class="me-2" src="assets/img/logo-bookmark-footer.svg"
-                alt="bookmark logo" />BOOKMARK</a>
-            <ul class="nav flex-column align-items-center flex-md-row mb-2">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-                <span class="visually-hidden">(current)</span>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div class="social-media mb-3">
-            <img class="me-4" src="assets/img/facebook.svg" alt="">
-            <img src="assets/img/twitter.svg" alt="">
-          </div>
+            <div class="d-flex flex-column flex-md-row">
+              <a class="navbar-brand" href="#"><img class="me-2" src="assets/img/logo-bookmark-footer.svg"
+                  alt="bookmark logo" />BOOKMARK</a>
+              <ul class="nav flex-column align-items-center flex-md-row mb-2">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                  <span class="visually-hidden">(current)</span>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="social-media mb-3">
+              <img class="me-4" src="assets/img/facebook.svg" alt="">
+              <img src="assets/img/twitter.svg" alt="">
+            </div>
 
-        </div>
-      </nav>
-    </div>
+          </div>
+        </nav>
+      </div>
     </section>
 
   </footer>
