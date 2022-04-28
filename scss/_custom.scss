@@ -45,12 +45,15 @@
 .spacer {
   height: 10rem;
 }
+.spacer-2{
+  height: 3rem;
+}
 
-//nav menu
+
 .navbarpremium{
   .nav-link {
     &:hover{
-      color: $red-400;
+      color: $red-400 !important;
     }
   }
   .btn-secondary {
@@ -59,6 +62,14 @@
       color: $red-400 !important;
 
     }
+  }
+  svg{
+    &:hover {
+      fill: $red-400;
+    }
+  }
+  span{
+    padding:1rem;
   }
 }
 

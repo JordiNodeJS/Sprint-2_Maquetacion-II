@@ -58,7 +58,7 @@
     <!-- Bookmark -->
     <div class="container">
       <div class="row">
-        <div class="order-1 order-sm-0 col-12 col-md-6 col-lg-6">
+        <div class="order-1 order-sm-0 col-12 col-md-6 col-lg-6 mb-5">
           <h1 class="text-center text-md-start fw-bolder">A Simple Bookmark Manager</h1>
           <p class="text-muted">A clean and simple interface to organize your favourite websites. Open a new broser tab
             and see your sites
@@ -70,6 +70,7 @@
             Firefox</a>
 
         </div>
+
         <div class="position-relative  order-0 order-sm-1 col overflow-figurate">
           <img class="img-fluid" src="assets/img/illustration-hero.svg" alt="image" />
           <div class="position-absolute top-50 start-50 bg-primary bg-figure"></div>
@@ -279,8 +280,8 @@
     </div>
   </main>
   <!-- SPACER -->
+<div class="spacer-2"></div>
 
-  <div class="my-5"></div>
   <!-- FOOTER -->
   <footer class="mt-5 pt-5 bg-primary navbarpremium">
     <!-- FORM -->
@@ -294,15 +295,14 @@
 
 
         <!-- FORM VALIDATION -->
-        <form action="#" class="row row-cols-lg-auto row-cols-sm-12 g-3 align-items-center was-validated">
-        <!-- <form action="#" class="was-validated"> -->
+        <form action="#" class="row row-cols-lg-auto row-cols-sm-12 g-3 align-items-center was-validated" required>
+          <!-- <form action="#" class="was-validated"> -->
           <div class="col-12">
             <label class="visually-hidden" for="emailValidation">Username</label>
             <div class="input-group">
-              <input type="email" class="form-control  px-4 py-2" id="emailValidation">
-
+              <input type="email" class="form-control  px-4 py-2" id="emailValidation" placeholder="your@mail.buddy">
               <div class="invalid-tooltip">
-                Please choose a username
+                hey! Choose a right email address, mate!
               </div>
             </div>
 
@@ -321,15 +321,13 @@
 
 
 
-
-
     <div class="my-5"></div>
 
 
     <!-- NAV FOOTER -->
     <section class="bg-nav-footer">
       <div class="container-fluid row " role="navegation" id="footer">
-        <nav class="navbar navbar-expand-lg navbar-lighttext-uppercase letter">
+        <nav class="navbar navbar-expand-lg navbar-lighttext-uppercase letter pt-3">
           <div class="container-fluid d-flex flex-column align-items-center flex-md-row justify-content-md-around">
 
             <div class="d-flex flex-column flex-md-row">
@@ -348,9 +346,19 @@
                 </li>
               </ul>
             </div>
-            <div class="social-media mb-3">
-              <img class="me-4" src="assets/img/facebook.svg" alt="">
-              <img src="assets/img/twitter.svg" alt="">
+            <div class="d-flex flex-row mb-3">
+              <span>
+                <svg  fill="white" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><path d="M 21.800781 0 L 2.199219 0 C 1 0 0 1 0 2.199219 L 0 21.800781 C 0 23 1 24 2.199219 24 L 12 24 L 12 14 L 9 14 L 9 11 L 12 11 L 12 8 C 12 5.5 13 4 16 4 L 19 4 L 19 7 L 17.699219 7 C 16.800781 7 16 7.800781 16 8.699219 L 16 11 L 20 11 L 19.5 14 L 16 14 L 16 24 L 21.800781 24 C 23 24 24 23 24 21.800781 L 24 2.199219 C 24 1 23 0 21.800781 0 Z"/></svg>
+              </span>
+              <span>
+                <svg  fill="white" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><path d="M 24 4.300781 C 23.101563 4.699219 22.199219 5 21.199219 5.101563 C 22.199219 4.5 23 3.5 23.398438 2.398438 C 22.398438 3 21.398438 3.398438 20.300781 3.601563 C 19.300781 2.601563 18 2 16.601563 2 C 13.898438 2 11.699219 4.199219 11.699219 6.898438 C 11.699219 7.300781 11.699219 7.699219 11.800781 8 C 7.699219 7.800781 4.101563 5.898438 1.699219 2.898438 C 1.199219 3.601563 1 4.5 1 5.398438 C 1 7.101563 1.898438 8.601563 3.199219 9.5 C 2.398438 9.398438 1.601563 9.199219 1 8.898438 C 1 8.898438 1 8.898438 1 9 C 1 11.398438 2.699219 13.398438 4.898438 13.800781 C 4.5 13.898438 4.101563 14 3.601563 14 C 3.300781 14 3 14 2.699219 13.898438 C 3.300781 15.898438 5.101563 17.300781 7.300781 17.300781 C 5.601563 18.601563 3.5 19.398438 1.199219 19.398438 C 0.800781 19.398438 0.398438 19.398438 0 19.300781 C 2.199219 20.699219 4.800781 21.5 7.5 21.5 C 16.601563 21.5 21.5 14 21.5 7.5 C 21.5 7.300781 21.5 7.101563 21.5 6.898438 C 22.5 6.199219 23.300781 5.300781 24 4.300781"/></svg>
+              </span>
+
+
+
+
+              <!-- <a class="nav-link" href="#"><img class="svg-fill me-4" src="assets/img/facebook.svg" alt=""></a> -->
+              <!-- <a class="nav-link" href="#"><img class="svg-fill" src="assets/img/twitter.svg" alt=""></a> -->
             </div>
 
           </div>
